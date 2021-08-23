@@ -1,0 +1,112 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@400;700;800&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  /* font-family: 'Jua', sans-serif; */
+  font-family: 'Nanum Gothic', sans-serif;
+  background-color: #fff2b0;
+  height: 3000px;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+.wrap{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+img{
+  display: block;
+}
+
+/* header */
+
+header{
+  height: 80px;
+  padding: 20px 0 0;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+header::after{
+  content: "";
+  display: block;
+  background-image: url(../image/pattern.svg);
+  height: 95px;
+  background-repeat: repeat-x;
+  /* 패턴 이미지에 그림자 추가하기 */
+}
+header .wrap{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+header .wrap .logo{}
+header .wrap .logo img{
+  height: 60px;
+}
+header .wrap .menu{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+header .wrap .menu li{
+  margin-left: 20px;
+}
+header .wrap .menu li a{
+  font-family: 'Jua', sans-serif;
+  font-size: 18px;
+}
+
+.welcome{
+  margin-top: 100px;
+  background-color: #aaffaa;
+}
+.welcome .wrap{
+  height: calc(100vh - 100px);
+}
+.welcome .wrap .album{
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.welcome .wrap .album .spin{
+  height: 300px;
+  position: absolute;
+}
+.welcome .wrap .album .cd{
+  height: 200px;
+  top: 60px;
+  right: 170px;
+  animation: spin 10s linear infinite;
+}
+@keyframes spin{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.welcome .wrap .album .cover{
+  
+}
+.welcome .wrap .album .shadow{
+  background-color: rgba(0,0,0,0.3);
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  bottom: 25px;
+  left: 20%;
+  border-radius: 50%;
+  filter: blur(3px);
+}
+/* 이미지 색상들 변경하기 */
