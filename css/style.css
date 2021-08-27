@@ -171,6 +171,7 @@ header .wrap .menu li a{
   top: 53%;
   transform: translateY(-50%);
   right: 100px;
+  font-family: 'Jua', sans-serif;
 }
 .about_me .right .info{
   
@@ -178,13 +179,22 @@ header .wrap .menu li a{
 .about_me .right .info p{
   padding-bottom: 20px;
 }
+.about_me .right .info p span{
+  background-color: #ff9292;
+  border-radius: 3px;
+  padding: 5px;
+}
 .about_me .right .introduce{
   padding-top: 50px;
 }
 .about_me .right .introduce p{
   padding-bottom: 20px;
 }
-
+.about_me .right .introduce p span{
+  background-color: #ff9292;
+  border-radius: 3px;
+  padding: 5px;
+}
 
 /* my skill */
 .my_skill{
@@ -287,18 +297,34 @@ header .wrap .menu li a{
   border-radius: 20px;
   position: relative;
 }
-.portfolio .swiper-slide .monitor{}
-.portfolio .swiper-slide .monitor .monitor_cont{
-  position: absolute;
+.portfolio .swiper-slide .monitor{
   width: 300px;
+  height: 170px;
+  position: absolute;
   top: 50px;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
+.portfolio .swiper-slide .monitor .monitor_cont{
+  position: absolute;
+  width: 280px;
+  height: 160px;
+  background-size: 100%;
+  background-position: 0 0;
+  left: 0;
+  right: 0;
+  top: 10px;
+  bottom: unset;
+  margin: 0 auto;
+  transition: 5s;
+
+}
+.portfolio .swiper-slide .monitor:hover .monitor_cont{
+  background-position: 0 100%;
+}
 .portfolio .swiper-slide .monitor .monitor_img{
   position: absolute;
-  top: 50px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -377,7 +403,7 @@ header .wrap .menu li a{
 }
 .portfolio .port_pop{
   position: fixed;
-  width: 1200px;
+  width: 1000px;
   height: 600px;
   top: 50%;
   left: 50%;
@@ -399,13 +425,14 @@ header .wrap .menu li a{
 }
 .portfolio .port_pop .img_part{
   background-color: #aaafff;
-  width: 500px;
+  width: 400px;
   height: 400px;
   border-radius: 30px;
   background-size: cover;
+  background-position: 50% 0%;
 }
 .portfolio .port_pop .text_part{
-  width: 550px;
+  width: 400px;
   height: 320px;
   position: relative;
 }

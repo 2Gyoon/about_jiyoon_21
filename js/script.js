@@ -50,8 +50,8 @@ for(i=0; i<port_Array.length; i++){
   const port_box = `
   <div class="swiper-slide">
     <div class="monitor">
-    <img src="./image/${port_Array[i][0]}" alt="포트폴리오 이미지" class="monitor_cont">
-    <img src="./image/moni.png" alt="모니터" class="monitor_img">
+      <div class="monitor_cont"></div>
+      <img src="./image/moni.png" alt="모니터" class="monitor_img">
     </div>
     <h2>${port_Array[i][1]}</h2>
     <a href="javascript:void(0);" class="btn">자세히 보기</a>
@@ -59,6 +59,13 @@ for(i=0; i<port_Array.length; i++){
   `;
   port_swiper_wrapper.innerHTML += port_box;
 }
+
+const monitor_conts = document.querySelectorAll(".portfolio .monitor_cont");
+
+monitor_conts.forEach(function(monitor_cont, index){
+  monitor_cont.style.backgroundImage = `url(./image/${port_Array[index][0]})`;
+});
+
 
 const slideBtns = document.querySelectorAll(".portfolio .btn");
 const portPop = document.querySelector(".portfolio .port_pop");
@@ -70,10 +77,9 @@ slideBtns.forEach(function(slideBtn, index){
   slideBtn.addEventListener("click", function(){
     portBlack.classList.add("show");
     portPop.classList.add("show");
-    const img_src = slideBtn.previousElementSibling.previousElementSibling.childNodes[1].getAttribute("src");
+    // const img_src = slideBtn.previousElementSibling.previousElementSibling.childNodes[1].getAttribute("src");
     const img_title = slideBtn.previousElementSibling.textContent;
-    console.log(img_title)
-    portPop_img.style.backgroundImage = `url(${img_src})`;
+    portPop_img.style.backgroundImage = `url(./image/${port_Array[index][0]})`;
     portPop_text.children[0].textContent = img_title;
     portPop_text.children[1].textContent = port_Array[index][2];
     portPop_text.children[2].textContent = port_Array[index][3];
