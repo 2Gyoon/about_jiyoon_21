@@ -21,6 +21,34 @@ a{
 img{
   display: block;
 }
+.run{
+  opacity: 0;
+  transition: 1s;
+}
+.run.to-right{
+  transform: translateX(-150px);
+}
+.run.to-left{
+  transform: translateX(150px);
+}
+.active .run{
+  opacity: 1;
+  transform: translateX(0);
+}
+.active .run.delay-0{
+  transition-delay: 0s;
+}
+.active .run.delay-1{
+  transition-delay: 0.3s;
+}
+.active .run.delay-2{
+  transition-delay: 0.6s;
+}
+
+
+
+
+
 
 /* header */
 
@@ -196,9 +224,9 @@ header .wrap .menu li a{
   overflow: hidden;
 }
 .my_skill .skill_part .skill .per_bar_frame .per_bar{
-  border-radius: 10px;
-  width: 50%;
+  width: 0%;
   height: 100%;
+  transition: width 1s;
 }
 .my_skill .skill_part .skill1 .per_bar_frame .per_bar{background-color: #f55252;}
 .my_skill .skill_part .skill2 .per_bar_frame .per_bar{background-color: #ff9539;}
@@ -216,6 +244,18 @@ header .wrap .menu li a{
   color: #333;
   font-size: 13px;
 }
+.my_skill.active .skill_part .skill1 .per_bar_frame .per_bar{width: 80%;}
+.my_skill.active .skill_part .skill2 .per_bar_frame .per_bar{width: 80%;}
+.my_skill.active .skill_part .skill3 .per_bar_frame .per_bar{width: 65%;}
+.my_skill.active .skill_part .skill4 .per_bar_frame .per_bar{width: 80%;}
+.my_skill.active .skill_part .skill5 .per_bar_frame .per_bar{width: 65%;}
+.my_skill.active .skill_part .skill6 .per_bar_frame .per_bar{width: 70%;}
+.my_skill.active .skill_part .skill7 .per_bar_frame .per_bar{width: 70%;}
+.my_skill.active .skill_part .skill8 .per_bar_frame .per_bar{width: 10%;}
+
+
+
+
 
 /* portfolio */
 .portfolio{
