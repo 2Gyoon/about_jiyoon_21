@@ -91,6 +91,33 @@ header .wrap .menu li a{
   font-family: 'Jua', sans-serif;
   font-size: 18px;
 }
+header .wrap .menu li:last-child a{
+  display: block;
+  color: #f55252;
+  animation: changeColor 10s linear infinite;
+}
+
+@keyframes changeColor{
+  0%{
+    color: #f55252;
+  }
+  20%{
+    color: #ff9539;
+  }
+  40%{
+    color: #ffdd00;
+  }
+  60%{
+    color: #0fd937;
+  }
+  80%{
+    color: #016fff;
+  }
+  100%{
+    color: #a04dff;
+  }
+
+}
 
 /* welcome */
 
