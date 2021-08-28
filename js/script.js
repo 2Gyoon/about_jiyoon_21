@@ -1,3 +1,40 @@
+const menuEls = document.querySelectorAll("header .menu li");
+const section = document.querySelectorAll("section");
+
+menuEls.forEach(function(menuEl, index){
+  menuEl.addEventListener("click", function(){
+    gsap.to(window, 1, {
+      scrollTo:section[index + 1]
+    })
+  }); 
+});
+
+
+
+const totop = document.querySelector("#totop");
+
+window.addEventListener("scroll", function(){
+  if(window.scrollY > 500){
+    gsap.to(totop, 0.6, {
+      opacity: 1,
+      display: "flex"
+    });
+  }else{
+    gsap.to(totop, 0.6, {
+      opacity: 0,
+      display: "none"
+    });
+  };
+});
+
+totop.addEventListener("click", function(){
+  gsap.to(window, 1, {
+    scrollTo: 0
+  })
+});
+
+
+
 const spyEls = document.querySelectorAll(".scroll-spy");
 
 spyEls.forEach(function(spyEl){
@@ -23,7 +60,7 @@ const slideEl = new Swiper('.portfolio .swiper-container', {
 const port_Array = [
   ["summer.png", "Summer K-pop", "여름에 듣기 좋은 K-pop을 소개", "앨범 이미지 클릭시, 해당 곡 youtube 영상으로 이동", "앨범 이미지 클릭시, 회전하던 LP이미지 애니메이션 동작", "하단 버튼 클릭시 좌우로 이동", "css animation과 keyframes을 활용","디자인 100%, 제작 100%", "https://2gyoon.github.io/summer_song/"],
   ["fanboard.png", "FANBOARD_MAIN", "스타의 팬들이 중심이 되는 커뮤니티", "MY, HOT, NEW로 카테고리 구분", "북마크 버튼 클릭시 원의 이동과 버튼 색상 변경", "로그인과 로그아웃이 가능함", "PHP, MYSQL 사용 / 반응형", "디자인 100%, 제작 100%", "http://dnlsl70.dothome.co.kr/fanboard/"],
-  ["fanboard_ch1.png", "FANBOARD_CH", "스타의 팬들이 모여 소통하는 공간", "로그인 후 우측에 프로필 표시와 글쓰기, 게시글 열람 가능", "좌측 HOT 게시판에 조회수가 높은 8개 게시글 표시", "테블릿pc 사이즈 이하에서는 우측 하단 버튼 클릭시 프로필과 가입그룹 표시", "PHP, MYSQL 사용 / 반응형으로 제작","디자인 100%, 제작 100%","http://dnlsl70.dothome.co.kr/fanboard/ch_ohmyg.php"],
+  ["fanboard_ch1.png", "FANBOARD_CH", "스타의 팬들이 모여 소통하는 공간", "로그인 후 우측에 프로필 표시와 글쓰기, 게시글 열람 가능", "좌측 HOT 게시판에 조회수가 높은 8개 게시글 표시", "테블릿pc 사이즈 이하에서 우측 하단 버튼 클릭시 프로필과 가입그룹 표시", "PHP, MYSQL 사용 / 반응형으로 제작","디자인 100%, 제작 100%","http://dnlsl70.dothome.co.kr/fanboard/ch_ohmyg.php"],
   ["fanboard_gr2.png", "FANBOARD_GR","특정 관심사를 가진 팬들이 모여 만든 소모임", "각 게시판에 게시글쓰기 가능", "자유게시판, 모집/홍보 게시판, 오늘의 한마디", "그룹 특성에 맞는 광고를 좌측에 배치", "PHP, MYSQL 사용 / 반응형",  "디자인 100%, 제작 100%", "http://dnlsl70.dothome.co.kr/fanboard/ch_ohmyg_gr2.php"],
 
   ["website.png", "온라인클래스","온라인 동영상 강의 사이트", "게시판, 메시지보내기, 회원가입, 로그인 기능 실습","클래스 검색 기능 실습", "쿠키 사용한 팝업 실습", "PHP, MYSQL 사용",  "디자인 50%, 제작 70%", "http://dnlsl70.dothome.co.kr/website/"],
