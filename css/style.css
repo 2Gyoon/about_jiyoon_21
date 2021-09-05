@@ -47,9 +47,6 @@ img{
 
 
 
-
-
-
 /* header */
 
 header{
@@ -721,3 +718,121 @@ footer .wrap p span{}
   z-index: 9;
 }
 #totop .material-icons{}
+
+@media (max-width: 1199px){
+  body{
+    background-color: #aaaaff;
+  }
+  .wrap{
+    width: 100%;
+  }
+  .title{
+    text-align: center;
+  }
+
+  .welcome .wrap .album .shadow{
+    bottom: 22px;
+    left: 190px;
+  }
+  .welcome .wrap .album .cd{
+    right: 95px;
+  }
+  .welcome .wrap .album .cover{
+    left: 70px;
+  }
+
+
+
+
+
+
+  .about_me .left{
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .about_me .left .profile_pic{
+    width: 160px;
+  }
+  .about_me .right{
+    width: 100%;
+    top: 65%;
+    right: 0;
+    text-align: center;
+  }
+  .about_me .right .introduce{
+    padding-top: 20px;
+  }
+
+
+  .portfolio .swiper-container{
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .portfolio .swiper-next{
+    right: 90px;
+  }
+  .portfolio .swiper-prev{
+    left: 90px;
+  }
+
+
+
+  .contact form{
+    padding: 0 50px;
+  }
+  .contact form .formlist{
+    border-radius: 20px;
+  }
+  .contact form::after{
+    display: none;
+  }
+
+
+
+
+
+
+  footer{
+    height: 200px;
+  }
+  footer .wrap{
+    background-size: 50%;
+  }
+  footer .wrap img{
+    height: 80px;
+  }
+}
+
+
+@media(max-width: 1023px) {
+
+}
+
+@media(max-width: 959px) {
+  .portfolio .swiper-container{
+    width: 60%;
+  }
+  .portfolio .swiper-prev{
+    left: 50px;
+  }
+  .portfolio .swiper-next{
+    right: 50px;
+  }
+}
+
+@media(max-width: 767px) {
+
+
+}
+
+
+@media(max-width: 424px) {
+
+}
+
+@media(max-width: 374px) {
+
+}
