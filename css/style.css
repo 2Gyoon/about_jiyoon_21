@@ -17,6 +17,7 @@ a{
   height: 100%;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 img{
   display: block;
@@ -320,7 +321,6 @@ header .wrap .menu li:last-child a{
   height: 600px;
   background-color: #fff;
   border-radius: 20px;
-  position: relative;
 }
 .portfolio .swiper-slide .monitor{
   width: 300px;
@@ -376,6 +376,7 @@ header .wrap .menu li:last-child a{
 }
 .portfolio .swiper-slide .btn:hover{
   background-color: #ff9292;
+  color: #fff;
 }
 .portfolio .swiper-prev,
 .portfolio .swiper-next{
@@ -824,7 +825,44 @@ footer .wrap p span{}
 }
 
 @media(max-width: 767px) {
+  body{
+    background-color: #aaffaa;
+  }
 
+  header .wrap{
+    flex-direction: column;
+    align-items: center;
+  }
+  header .wrap .logo img{
+    height: 40px;
+  }
+  header .wrap .menu li a{
+    font-size: 14px;
+  }
+
+
+
+
+
+  .portfolio .swiper-slide{
+    height: 500px;
+  }
+  .portfolio .swiper-slide .monitor .monitor_cont{
+    width: 234px;
+    height: 132px;
+    top: 9px;
+  }
+  .portfolio .swiper-slide .monitor .monitor_img{
+    width: 250px;
+  }
+  .portfolio .swiper-slide h2{
+    top: 310px;
+    font-size: 20px;
+  }
+  .portfolio .swiper-slide .btn{
+    padding: 10px 20px;
+    bottom: 40px;
+  }
 
 }
 
