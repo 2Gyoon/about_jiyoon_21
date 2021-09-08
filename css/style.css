@@ -430,7 +430,7 @@ header .wrap .menu li:last-child a{
 .portfolio .port_pop{
   position: fixed;
   width: 1000px;
-  height: 600px;
+  height: 500px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -440,7 +440,7 @@ header .wrap .menu li:last-child a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  padding: 0 50px;
   opacity: 0;
   z-index: -1;
 }
@@ -778,6 +778,30 @@ footer .wrap p span{}
   .portfolio .swiper-prev{
     left: 90px;
   }
+  .portfolio .port_pop{
+    width: 800px;
+    padding: 0 30px;
+  }
+  .portfolio .port_pop .img_part{
+    width: 350px;
+  }
+  .portfolio .port_pop .text_part{
+    width: 360px;
+    height: 330px;
+  }
+  .portfolio .port_pop .text_part h2{
+    font-size: 20px;
+  }
+  .portfolio .port_pop .text_part p:nth-of-type(1){
+    padding-top: 20px;
+  }
+  .portfolio .port_pop .text_part p{
+    font-size: 14px;
+  }
+  .portfolio .port_pop .text_part h4{
+    padding-top: 20px;
+    font-size: 15px;
+  }
 
 
 
@@ -822,6 +846,33 @@ footer .wrap p span{}
   .portfolio .swiper-next{
     right: 50px;
   }
+  .portfolio .port_pop{
+    width: 600px;
+    height: 550px;
+    flex-direction: column;
+    padding: 35px 0;
+  }
+  .portfolio .port_pop .img_part{
+    width: 300px;
+    height: 200px;
+  }
+  .portfolio .port_pop .text_part{
+    width: 500px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio .port_pop .text_part a{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+
+
+
+
 }
 
 @media(max-width: 767px) {
