@@ -894,7 +894,6 @@ footer .wrap p span{}
 
 
 
-
   .portfolio .swiper-slide{
     height: 500px;
   }
@@ -919,7 +918,30 @@ footer .wrap p span{}
 
 
 @media(max-width: 424px) {
-
+  header{
+    width: 200px;
+    right: -205px;
+    height: 100%;
+    padding: 40px 0 0;
+  }
+  header .wrap{
+    justify-content: unset;
+  }
+  header .wrap .menu{
+    flex-direction: column;
+    padding-top: 30px;
+    align-items: center;
+  }
+  header .wrap .menu li{
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  header .wrap .menu li a{
+    font-size: 16px;
+  }
+  header::after{
+    display: none;
+  }
 }
 
 @media(max-width: 374px) {
