@@ -117,6 +117,31 @@ header .wrap .menu li:last-child a{
 
 }
 
+header .material-icons{
+  position: absolute;
+  top: 10px;
+  left: -30px;
+  display: none;
+}
+
+.header_black{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: -2;
+  opacity: 0;
+  
+
+}
+.header_black.active{
+  z-index: 9;
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+
 /* welcome */
 
 .welcome{
@@ -920,7 +945,7 @@ footer .wrap p span{}
 @media(max-width: 424px) {
   header{
     width: 200px;
-    right: -205px;
+    right: -200px;
     height: 100%;
     padding: 40px 0 0;
   }
@@ -941,6 +966,9 @@ footer .wrap p span{}
   }
   header::after{
     display: none;
+  }
+  header .material-icons{
+    display: block;
   }
 }
 

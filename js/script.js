@@ -1,3 +1,29 @@
+
+const verMenu = document.querySelector(".ver-menu");
+const verHeader = document.querySelector("header");
+const headerBlack = document.querySelector(".header_black");
+
+verMenu.addEventListener("click", function () {
+  if (verMenu.classList.contains("active") === false) {
+    gsap.to(verHeader, 0.8, {
+      x: "-200px"
+    })
+    verMenu.classList.add("active");
+    headerBlack.classList.add("active");
+    verMenu.textContent = "close";
+    verMenu.style.color = "#fff";
+  } else {
+    gsap.to(verHeader, 0.8, {
+      x: "0px"
+    })
+    verMenu.classList.remove("active");
+    headerBlack.classList.remove("active");
+    verMenu.textContent = "menu";
+    verMenu.style.color = "#000"; // 색상 변경
+  }
+});
+
+
 const menuEls = document.querySelectorAll("header .menu li");
 const section = document.querySelectorAll("section");
 
