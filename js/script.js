@@ -23,6 +23,16 @@ verMenu.addEventListener("click", function () {
   }
 });
 
+headerBlack.addEventListener("click", function () {
+  gsap.to(verHeader, 0.8, {
+    x: "0px"
+  })
+  verMenu.classList.remove("active");
+  headerBlack.classList.remove("active");
+  verMenu.textContent = "menu";
+  verMenu.style.color = "#000"; // 색상 변경
+});
+
 
 const menuEls = document.querySelectorAll("header .menu li");
 const section = document.querySelectorAll("section");

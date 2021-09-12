@@ -181,7 +181,7 @@ header .material-icons{
   
 }
 .welcome .wrap .album .shadow{
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.1);
   width: 300px;
   height: 50px;
   position: absolute;
@@ -233,7 +233,7 @@ header .material-icons{
 .about_me .right .info p span{
   background-color: #ff9292;
   border-radius: 3px;
-  padding: 5px;
+  padding: 0 5px;
 }
 .about_me .right .introduce{
   padding-top: 50px;
@@ -244,7 +244,7 @@ header .material-icons{
 .about_me .right .introduce p span{
   background-color: #ff9292;
   border-radius: 3px;
-  padding: 5px;
+  padding: 0 5px;
 }
 
 /* my skill */
@@ -398,6 +398,7 @@ header .material-icons{
   transform: translate(-50%, -50%);
   transition: 0.3s;
   font-weight: bold;
+  background-color: #fff;
 }
 .portfolio .swiper-slide .btn:hover{
   background-color: #ff9292;
@@ -917,6 +918,11 @@ footer .wrap p span{}
   }
 
 
+  .about_me .right{
+    top: 68%;
+  }
+
+
 
 
   .portfolio .swiper-slide{
@@ -939,10 +945,45 @@ footer .wrap p span{}
     bottom: 40px;
   }
 
+
+  .contact form .formlist{
+    padding: 25px;
+    display: block;
+  }
+  .contact ul.tel{
+    width: 100%;
+    flex-direction: unset;
+    justify-content: space-between;
+    padding-right: 0;
+  }
+  .contact ul.tel li{
+    padding-bottom: 40px;
+    width: calc(50% - 10px);
+  }
+  .contact ul li label{
+    padding-bottom: 10px;
+  }
+  .contact ul.message_box{
+    width: 100%;
+    padding-left: 0;
+    border: none;
+  }
+  .contact ul.message_box .content textarea{
+    height: 170px;
+  }
+  .contact ul.message_box .btn_box{
+    text-align: center;
+    padding-top: 10px;
+  }
+  .contact ul.message_box .btn_box button{
+    padding: 7px 30px;
+  }
+
+
+
 }
 
-
-@media(max-width: 424px) {
+@media(max-width: 599px) {
   header{
     width: 200px;
     right: -200px;
@@ -970,6 +1011,112 @@ footer .wrap p span{}
   header .material-icons{
     display: block;
   }
+
+
+  .welcome{
+    margin-top: 0;
+    height: 100vh;
+  }
+  .welcome .wrap .album{
+    width: 470px;
+    height: 230px;
+  }
+  .welcome .wrap .album .shadow{
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 265px;
+  }
+  .welcome .wrap .album .cd{
+    right: 100px;
+    height: 137px;
+    top: 38px;
+  }
+  .welcome .wrap .album .cover{
+    height: 200px;
+  }
+
+
+  .about_me .right{
+    top: 70%;
+    font-size: 13px;
+    padding: 0 60px;
+    text-align: left;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .about_me .right .info p{
+    padding-bottom: 10px;
+    line-height: 2;
+    font-weight: 800;
+    word-break: keep-all;
+  }
+  .about_me .right .info p:nth-child(1){
+    text-align: center;
+  }
+  .about_me .right .introduce p{
+    padding-bottom: 10px;
+    line-height: 2;
+    font-weight: 800;
+    word-break: keep-all;
+  }
+
+
+  .my_skill .skill_part{
+    width: 100%;
+  }
+  .my_skill .skill_part .skill{
+    justify-content: center;
+    position: relative;
+  }
+  .my_skill .skill_part .skill .name{
+    position: absolute;
+    z-index: 1;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  }
+
+
+
+  .portfolio .swiper-container{
+    width: 100%;
+  }
+  .portfolio .swiper-slide{
+    background-color: #ffd489;
+    border-radius: 0;
+  }
+  .portfolio .swiper-prev,
+  .portfolio .swiper-next{
+    width: 30px;
+    height: 30px;
+
+    top: 55%;
+  }
+  .portfolio .swiper-prev{
+    left: 30px;
+  }
+  .portfolio .swiper-next{
+    right: 30px;
+  }
+  .portfolio .material-icons{
+    font-size: 20px;
+
+  }
+  .portfolio .swiper-prev:hover,
+  .portfolio .swiper-next:hover{
+
+  }
+  .portfolio .swiper-prev:hover .material-icons,
+  .portfolio .swiper-next:hover .material-icons{
+
+  }
+
+
+
+
+}
+
+
+@media(max-width: 424px) {
+
 }
 
 @media(max-width: 374px) {
