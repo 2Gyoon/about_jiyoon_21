@@ -92,7 +92,7 @@ const slideEl = new Swiper('.portfolio .swiper-container', {
   breakpoints: {
     1200: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
     960: {
       slidesPerView: 2,

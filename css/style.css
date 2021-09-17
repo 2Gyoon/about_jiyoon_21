@@ -6,7 +6,7 @@
 body{
   /* font-family: 'Jua', sans-serif; */
   font-family: 'Nanum Gothic', sans-serif;
-  background-color: #fff2b0;
+  background-color: #b8dfd8;
 }
 a{
   text-decoration: none;
@@ -147,6 +147,7 @@ header .material-icons{
 .welcome{
   margin-top: 100px;
   height: calc(100vh - 100px);
+  border-bottom: 5px dashed #333;
 }
 .welcome .wrap{
 
@@ -166,7 +167,7 @@ header .material-icons{
 .welcome .wrap .album .cd{
   height: 200px;
   top: 60px;
-  right: 170px;
+  right: 150px;
   animation: spin 10s linear infinite;
 }
 @keyframes spin{
@@ -178,7 +179,7 @@ header .material-icons{
   }
 }
 .welcome .wrap .album .cover{
-  
+  left: 20px;
 }
 .welcome .wrap .album .shadow{
   background-color: rgba(0,0,0,0.1);
@@ -186,7 +187,7 @@ header .material-icons{
   height: 50px;
   position: absolute;
   bottom: 25px;
-  left: 20%;
+  left: 25%;
   border-radius: 50%;
   filter: blur(3px);
 }
@@ -195,8 +196,9 @@ header .material-icons{
 /* about me */
 
 .about_me{
-  background-color: #fddfaa;
+  background-color: #fff2b0;
   height: 100vh;
+  border-bottom: 5px dashed #333;
 }
 .about_me .wrap{
 
@@ -231,7 +233,7 @@ header .material-icons{
   padding-bottom: 20px;
 }
 .about_me .right .info p span{
-  background-color: #ff9292;
+  background-color: #b8dfd8;
   border-radius: 3px;
   padding: 0 5px;
 }
@@ -242,7 +244,7 @@ header .material-icons{
   padding-bottom: 20px;
 }
 .about_me .right .introduce p span{
-  background-color: #ff9292;
+  background-color: #b8dfd8;
   border-radius: 3px;
   padding: 0 5px;
 }
@@ -250,6 +252,7 @@ header .material-icons{
 /* my skill */
 .my_skill{
   height: 100vh;
+  border-bottom: 5px dashed #333;
 }
 .my_skill .wrap{
 
@@ -321,7 +324,8 @@ header .material-icons{
 /* portfolio */
 .portfolio{
   height: 100vh;
-  background-color: #fddfaa;
+  background-color: #fff2b0;
+  border-bottom: 5px dashed #333;
 }
 .portfolio .wrap{
   overflow:visible;
@@ -389,8 +393,8 @@ header .material-icons{
   font-size: 23px;
 }
 .portfolio .swiper-slide .btn{
-  border: 2px solid #ff9292;
-  padding: 20px 30px;
+  border: 2px solid #b8dfd8;
+  padding: 15px 30px;
   border-radius: 30px;
   position: absolute;
   bottom: 20px;
@@ -401,14 +405,14 @@ header .material-icons{
   background-color: #fff;
 }
 .portfolio .swiper-slide .btn:hover{
-  background-color: #ff9292;
+  background-color: #b8dfd8;
   color: #fff;
 }
 .portfolio .swiper-prev,
 .portfolio .swiper-next{
   width: 42px;
   height: 42px;
-  border: 2px solid #fff;
+  border: 2px solid #333;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -428,15 +432,15 @@ header .material-icons{
 }
 .portfolio .material-icons{
   font-size: 30px;
-  color: #fff;
+  color: #333;
 }
 .portfolio .swiper-prev:hover,
 .portfolio .swiper-next:hover{
-  background-color: #fff;
+  background-color: #333;
 }
 .portfolio .swiper-prev:hover .material-icons,
 .portfolio .swiper-next:hover .material-icons{
-  color: #333;
+  color: #fff;
 }
 .portfolio .black{
   background-color: rgba(0,0,0,0.5);
@@ -476,10 +480,9 @@ header .material-icons{
   transition: opacity 0.4s;
 }
 .portfolio .port_pop .img_part{
-  background-color: #aaafff;
   width: 400px;
   height: 400px;
-  border: 2px solid #ccc;
+  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3);
   border-radius: 30px;
   background-size: cover;
   background-position: 50% 0%;
@@ -508,7 +511,7 @@ header .material-icons{
   font-size: 16px;
 }
 .portfolio .port_pop .text_part a{
-  border: 2px solid #ff9292;
+  border: 2px solid #b8dfd8;
   padding: 10px 20px;
   border-radius: 30px;
   position: absolute;
@@ -518,7 +521,7 @@ header .material-icons{
   font-weight: bold;
 }
 .portfolio .port_pop .text_part a:hover{
-  background-color: #ff9292;
+  background-color: #b8dfd8;
   color: #fff;
 }
 .portfolio .port_pop .close{
@@ -549,7 +552,7 @@ header .material-icons{
 }
 .contact form::after{
   position: absolute;
-  bottom: -80px;
+  bottom: -20px;
   content: "";
   display: block;
   background-image: url(../image/pattern.png);
@@ -634,7 +637,7 @@ header .material-icons{
 }
 .contact ul.message_box .btn_box button{
   background-color: transparent;
-  border: 2px solid #ff9292;
+  border: 2px solid #b8dfd8;
   padding: 10px 30px;
   border-radius: 30px;
   font-weight: bold;
@@ -643,7 +646,7 @@ header .material-icons{
   color: #333;
 }  
 .contact ul.message_box .btn_box button:hover{
-  background-color: #ff9292;
+  background-color: #b8dfd8;
   color: #fff;
 }
 
@@ -688,7 +691,7 @@ header .material-icons{
 }
 .thankyou_message article .btn_box .message_close{
   background-color: transparent;
-  border: 2px solid #ff9292;
+  border: 2px solid #b8dfd8;
   padding: 10px 30px;
   border-radius: 30px;
   font-weight: bold;
@@ -696,14 +699,14 @@ header .material-icons{
   cursor: pointer;
 }
 .thankyou_message article .btn_box .message_close:hover{
-  background-color: #ff9292;
+  background-color: #b8dfd8;
   color: #fff;
 }
 
 /* footer */
 footer{
   height: 300px;
-  background-color: #ffcc00;
+  background-color: #79b4b7;
 }
 footer .wrap{
   background-image: url(../image/ice_cream.svg);
@@ -733,7 +736,7 @@ footer .wrap p span{}
 #totop{
   width: 42px;
   height: 42px;
-  background-color: #ff9292;
+  background-color: #4c4c6d;
   color: #fff;
   border: 2px solid #fff;
   border-radius: 10px;
@@ -749,9 +752,6 @@ footer .wrap p span{}
 #totop .material-icons{}
 
 @media (max-width: 1199px){
-  body{
-    background-color: #aaaaff;
-  }
   .wrap{
     width: 100%;
   }
@@ -814,7 +814,7 @@ footer .wrap p span{}
     width: 350px;
   }
   .portfolio .port_pop .text_part{
-    width: 360px;
+    width: 345px;
     height: 330px;
   }
   .portfolio .port_pop .text_part h2{
@@ -904,10 +904,6 @@ footer .wrap p span{}
 }
 
 @media(max-width: 767px) {
-  body{
-    background-color: #aaffaa;
-  }
-
   header .wrap{
     flex-direction: column;
     align-items: center;
@@ -1083,7 +1079,7 @@ footer .wrap p span{}
     width: 100%;
   }
   .portfolio .swiper-slide{
-    background-color: #ffd489;
+    background-color: transparent;
     border-radius: 0;
   }
   .portfolio .swiper-prev,
