@@ -540,9 +540,12 @@ header .material-icons{
 .contact form{
   position: absolute;
   width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 55%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .contact form::after{
   position: absolute;
@@ -637,6 +640,7 @@ header .material-icons{
   font-weight: bold;
   transition: 0.4s;
   cursor: pointer;
+  color: #333;
 }  
 .contact ul.message_box .btn_box button:hover{
   background-color: #ff9292;
@@ -941,6 +945,7 @@ footer .wrap p span{}
   .portfolio .swiper-slide .btn{
     padding: 10px 20px;
     bottom: 40px;
+    font-size: 13px;
   }
 
 
@@ -1096,7 +1101,6 @@ footer .wrap p span{}
   }
   .portfolio .material-icons{
     font-size: 20px;
-
   }
   .portfolio .port_pop{
     width: 100%;
@@ -1174,13 +1178,13 @@ footer .wrap p span{}
     width: 180px;
   }
   .welcome .wrap .album .cd{
-    right: 66px;
+    right: 60px;
     height: 102px;
     top: 30px;
   }
   .welcome .wrap .album .cover{
     height: 150px;
-    left: 35px;
+    left: 40px;
   }
 
 
@@ -1189,6 +1193,12 @@ footer .wrap p span{}
   }
   .about_me .right{
     padding: 0 40px;
+  }
+  .about_me .right .info p{
+    font-weight: normal;
+  }
+  .about_me .right .introduce p{
+    font-weight: normal;
   }
 
 
@@ -1199,6 +1209,20 @@ footer .wrap p span{}
   }
   .portfolio .port_pop .text_part{
     align-items: start;
+  }
+
+  .thankyou_message article{
+    padding: 20px;
+  }
+  .thankyou_message article h1{
+    font-size: 16px;
+  }
+  .thankyou_message article p{
+    font-size: 14px;
+  }
+  .thankyou_message article .btn_box .message_close{
+    padding: 5px 20px;
+    font-size: 13px;
   }
 
 
