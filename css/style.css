@@ -820,17 +820,12 @@ footer .wrap p span{}
   }
 
 
-
   .contact form{
     padding: 0 50px;
   }
   .contact form::after{
     display: none;
   }
-
-
-
-
 
 
   footer{
