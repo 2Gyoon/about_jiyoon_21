@@ -5,25 +5,28 @@
 <style type="text/css">
 	.st0{fill:url(#SVGID_1_);}
 	.st1{fill:#A8E0E5;}
-	.st2{fill:#FFE6E6;}
-	.st3{fill:#E04646;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#4C4C6D;}
 </style>
 <g>
-	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="23.438" y1="263.5044" x2="326.5784" y2="88.4862">
-		<stop  offset="0" style="stop-color:#FF9292"/>
-		<stop  offset="0.1637" style="stop-color:#FF9595"/>
-		<stop  offset="0.2622" style="stop-color:#FF9D9D"/>
-		<stop  offset="0.3434" style="stop-color:#FFABAB"/>
-		<stop  offset="0.4152" style="stop-color:#FFBFBF"/>
-		<stop  offset="0.4802" style="stop-color:#FFD9D9"/>
-		<stop  offset="0.5" style="stop-color:#FFE3E3"/>
-		<stop  offset="0.5081" style="stop-color:#FFD9D9"/>
-		<stop  offset="0.5346" style="stop-color:#FFBFBF"/>
-		<stop  offset="0.5639" style="stop-color:#FFABAB"/>
-		<stop  offset="0.597" style="stop-color:#FF9D9D"/>
-		<stop  offset="0.6371" style="stop-color:#FF9595"/>
-		<stop  offset="0.7039" style="stop-color:#FF9292"/>
-		<stop  offset="0.9916" style="stop-color:#FF6345"/>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="176" x2="350" y2="176">
+		<stop  offset="0" style="stop-color:#4C4C6D"/>
+		<stop  offset="0.2154" style="stop-color:#4E4E6F"/>
+		<stop  offset="0.2929" style="stop-color:#545575"/>
+		<stop  offset="0.3482" style="stop-color:#60607F"/>
+		<stop  offset="0.3929" style="stop-color:#70718E"/>
+		<stop  offset="0.4312" style="stop-color:#8687A2"/>
+		<stop  offset="0.4651" style="stop-color:#A0A3BA"/>
+		<stop  offset="0.4951" style="stop-color:#BFC2D6"/>
+		<stop  offset="0.5" style="stop-color:#C5C8DB"/>
+		<stop  offset="0.5049" style="stop-color:#BFC2D6"/>
+		<stop  offset="0.5349" style="stop-color:#A0A3BA"/>
+		<stop  offset="0.5688" style="stop-color:#8687A2"/>
+		<stop  offset="0.6071" style="stop-color:#70718E"/>
+		<stop  offset="0.6518" style="stop-color:#60607F"/>
+		<stop  offset="0.7071" style="stop-color:#545575"/>
+		<stop  offset="0.7846" style="stop-color:#4E4E6F"/>
+		<stop  offset="1" style="stop-color:#4C4C6D"/>
 	</linearGradient>
 	<path class="st0" d="M175,1C78.4,1,0,79.4,0,176s78.4,175,175,175s175-78.4,175-175S271.7,1,175,1z M175,180c-2.2,0-4-1.8-4-4
 		s1.8-4,4-4s4,1.8,4,4S177.2,180,175,180z"/>
