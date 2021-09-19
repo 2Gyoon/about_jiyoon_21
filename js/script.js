@@ -1,3 +1,4 @@
+// 반응형 세로 메뉴 설정
 
 const verMenu = document.querySelector(".ver-menu");
 const verHeader = document.querySelector("header");
@@ -19,7 +20,7 @@ verMenu.addEventListener("click", function () {
     verMenu.classList.remove("active");
     headerBlack.classList.remove("active");
     verMenu.textContent = "menu";
-    verMenu.style.color = "#000"; // 색상 변경
+    verMenu.style.color = "#000";
   }
 });
 
@@ -30,7 +31,7 @@ headerBlack.addEventListener("click", function () {
   verMenu.classList.remove("active");
   headerBlack.classList.remove("active");
   verMenu.textContent = "menu";
-  verMenu.style.color = "#000"; // 색상 변경
+  verMenu.style.color = "#000";
 });
 
 
@@ -46,7 +47,7 @@ menuEls.forEach(function (menuEl, index) {
 });
 
 
-
+// totop 버튼
 const totop = document.querySelector("#totop");
 
 window.addEventListener("scroll", function () {
@@ -159,7 +160,7 @@ slideBtns.forEach(function (slideBtn, index) {
   slideBtn.addEventListener("click", function () {
     portBlack.classList.add("show");
     portPop.classList.add("show");
-    // const img_src = slideBtn.previousElementSibling.previousElementSibling.childNodes[1].getAttribute("src");
+
     const img_title = slideBtn.previousElementSibling.textContent;
     portPop_img.style.backgroundImage = `url(./image/${port_Array[index][0]})`;
     portPop_text.children[0].textContent = img_title;
