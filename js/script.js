@@ -104,6 +104,7 @@ const slideEl = new Swiper('.portfolio .swiper-container', {
 });
 
 const port_Array = [
+  ["oliveyoung.png", "올리브영 이벤트", "올리브영 이벤트 페이지 참고하여 제작하기", "카테고리, top버튼 동작", "상품 찜하기 모션", "BEST상품만 보기 가능",  "jQuery, reset.css 사용", "디자인 올리브영 홈페이지 참고, 제작 100%", "https://2gyoon.github.io/oliveyoung_pr/"],
   ["magazine.png", "Magazine Style", "잡지 스타일의 디자인 페이지", "상단 버튼 클릭 시 좌우로 이동 가능", "Adrián Somoza의 Agata Bielen 디자인 참고(출처↓)", "https://freebiesbug.com/psd-freebies/agata-bielen-psd-template/",  "swiper 슬라이드 활용해 표현", "제작 100%", "https://2gyoon.github.io/magazine_style/"],
   ["summer.png", "Summer K-pop", "여름에 듣기 좋은 K-pop을 소개", "앨범 이미지 클릭시, 해당 곡 youtube 영상으로 이동", "앨범 이미지 클릭시, 회전하던 LP이미지 애니메이션 동작", "하단 버튼 클릭시 좌우로 이동", "css animation과 keyframes을 활용", "디자인 100%, 제작 100%", "https://2gyoon.github.io/summer_song/"],
   ["fanboard.png", "FANBOARD_MAIN", "스타의 팬들이 중심이 되는 커뮤니티", "MY, HOT, NEW로 카테고리 구분", "북마크 버튼 클릭시 원의 이동과 버튼 색상 변경", "로그인과 로그아웃이 가능함", "PHP, MYSQL 사용 / 반응형", "디자인 100%, 제작 100%", "http://dnlsl70.dothome.co.kr/fanboard/"],
